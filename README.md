@@ -1,5 +1,4 @@
-# Ryan Wu Fall, 2020
-## PA4 CS76 - CSP README
+# csp solver read
 ## Running the code
 In order to test the Map coloring problem, one can run test_mapcoloring.py.
 More test cases can also be created as long as you pass in variables, domains, and constraints
