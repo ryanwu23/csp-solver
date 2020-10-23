@@ -1,5 +1,4 @@
-# Ryan Wu Fall, 2020
-## PA4 CS76 - CSP
+# CSP Solver Report
 ## Introduction:
 This csp lab has 4 core files.
 csp_problem.py has all the functions to solve a csp including backtracking, AC-3, etc.
@@ -69,35 +68,21 @@ If you want to do your own testing, go into csp_problem and enable/disable AC-3 
 #### AC-3 Testing:
 From no solution for circuit board.
 Without AC-3 it is 164 calls  but with AC-3, it cuts it down all the way to 1.
-![image](./ac3_improve.png)
+![image](./images/ac3_improve.png)
 
 AC-3 cuts it down by a ton.
 
 Here is another example from the fourth problem for circuit board where some backtracking is avoided and calls decrease from 7 to 5.
-![image](./ac3_improve2.png)
+![image](./images/ac3_improve2.png)
 
 #### variable heuristic Testing:
 From the third problem for map_coloring:
-![image](./var_heuristics.png)
+![image](./images/var_heuristics.png)
 
 The heuristics cut down the number of calls from 30 to 8.
 
 #### lcv_heuristic Testing:
 From the fourth problem for map_coloring:
-![image](./lcv_testing.png)
+![image](./images/lcv_testing.png)
 
 Randomize will return calls from around 8-30 yet lcv always has 8 calls.
-
-
-## Responses:
-The domain of each piece with a width of x and a height of y, passed in as (x, y) is determined by the width and height of the board.
-It is all points where the width does not exceed board width - x and the height does not exceed board height - y.
-Therefore we get all points where the piece can fit on the board without going off on the top or side.
-
-The constraints that would prevent components a and b from overlapping is given the pieces a and b, the dictionary would hold all point values a and b could be without overlapping.
-For example, in a 2 by 2 board where a is 1, 1 and b is 1, 2.
-The the list of possible points are [((0, 0), (1, 0)),((0, 1), (1, 0)),((1, 0), (0, 0)), ((1, 1), (0, 0))].
-
-In my code I do not convert anything to integers for the csp solver because I hold the values in dictionary and it performs/acts the same way as ints would.
-Even without the conversion, the csp solver works for both types of problems when taking them in as strings.
-It would also still work if I did choose to convert to ints but I decided not to for simplicity reasons and since it's less work.
