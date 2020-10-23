@@ -1,7 +1,3 @@
-# Ryan Wu
-# CS 76, PA4
-# October 2020
-
 from math import inf
 import random
 

@@ -1,6 +1,3 @@
-# Ryan Wu
-# CS 76, PA4
-# October 2020
 from MapProblem import MapProblem
 from csp_problem import backtracking_search
 

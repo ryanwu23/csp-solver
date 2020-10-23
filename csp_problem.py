@@ -1,7 +1,3 @@
-# Ryan Wu
-# CS 76, PA4
-# October 2020
-
 import heuristics
 
 # starts the recursive backtracking and returns the csp with the solution
